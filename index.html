@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>IPTV around the world </title>
+	<style>
+	/*
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	*/
+	
+	
+        body {
+            margin: auto 15px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .Box-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* The snackbar - position it at the bottom and in the middle of the screen */
+        #snackbar {
+            visibility: hidden;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+        }
+
+        /* Show the snackbar when clicking on a button (class added with JavaScript) */
+        #snackbar.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 1s;
+            animation: fadein 0.5s, fadeout 0.5s 1s;
+        }
+
+        /* Animations to fade the snackbar in and out */
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+		
+		
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: red;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+	}
+
+	#myBtn:hover {
+		background-color: #555;
+	}
+	
+		
+		
+		
+		
+		
+		
+    </style>
+	
+
+  </head>
+  <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  		<div class="table-container" id='favouritems'>
+             <h2 >		
+		       Help: 
+		     </h2>
+			 
+			 <h3>
+			   NDS Emulator
+			 </h3>		 
+			 
+			 <br/>
+			 
+			 <h4>
+			    Choose NDS rom file to play the game
+			 </h4>
+			 <br/>
+			 <img src="screen1-nds.png" >
+			 <br/>			 
+			 
+			 <h3>
+			    Control method to play game
+			 </h3>
+			 <br/>
+			 <img src="screen2-nds.png" >
+			 <br/>	
+			 
+			 
+			     <h2 >		
+		       FAQ:
+		     </h2>	
+			 <h3>
+			    Do you need an internet connection for this app to run?
+			 </h3>	
+			 <h3>
+			    You need to have an internet connection for this app, because all streaming data from game is coming from internet.
+				
+			 </h3>	
+			  <hr/>
+			  <br/><br/><br/>
+			  <h3>
+			   Support email: robotcomp0826@gmail.com
+			 </h3>	
+			 <h3>
+			  
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+
+			   
+			  
+
+          </div>	  
+	
+  </body>
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+  
+  
+</html>
